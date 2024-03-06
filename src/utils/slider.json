@@ -1,0 +1,63 @@
+[
+  {
+    "name": "Citralan Puri Serang",
+    "price": "35",
+    "detail": "Ruko Puri Indah Residence Block A7, Lingkar Street, Ciracas, Serang, Banten",
+    "image": "./r10.jpg"
+  },
+  {
+    "name": "Aliva Priva Jardin",
+    "price": "47",
+    "detail": "Jakarta Garden City Street, Cakung. Pulo Gadung, Jakarta Timur, DKI Jakarta",
+    "image": "./r4.jpg"
+  },
+  {
+    "name": "Asatti Garden City",
+    "price": "66",
+    "detail": "Pahlawan Street XVII No.215, Cinangka, Sawangan, Depok, Jawa Barat",
+    "image": "./r5.jpg"
+  },
+  {
+    "name": "Citralan Puri Serang",
+    "price": "35",
+    "detail": "Ruko Puri Indah Residence Block A7, Lingkar Street, Ciracas, Serang, Banten",
+    "image": "./r6.jpg"
+  },
+  {
+    "name": "Aliva Priva Jardin",
+    "price": "47",
+    "detail": "Jakarta Garden City Street, Cakung. Pulo Gadung, Jakarta Timur, DKI Jakarta",
+    "image": "./r7.jpg"
+  },
+  {
+    "name": "Asatti Garden City",
+    "price": "66",
+    "detail": "Pahlawan Street XVII No.215, Cinangka, Sawangan, Depok, Jawa Barat",
+    "image": "./r8.jpg"
+  },
+  {
+    "name": "Citralan Puri Serang",
+    "price": "35",
+    "detail": "Ruko Puri Indah Residence Block A7, Lingkar Street, Ciracas, Serang, Banten",
+    "image": "./r9.jpg"
+  },
+
+  {
+    "name": "Citralan Puri Serang",
+    "price": "35",
+    "detail": "Ruko Puri Indah Residence Block A7, Lingkar Street, Ciracas, Serang, Banten",
+    "image": "./r3.png"
+  },
+  {
+    "name": "Citralan Puri Serang",
+    "price": "35",
+    "detail": "Ruko Puri Indah Residence Block A7, Lingkar Street, Ciracas, Serang, Banten",
+    "image": "./r2.png"
+  },
+  {
+    "name": "Citralan Puri Serang",
+    "price": "35",
+    "detail": "Ruko Puri Indah Residence Block A7, Lingkar Street, Ciracas, Serang, Banten",
+    "image": "./r1.png"
+  }
+]
