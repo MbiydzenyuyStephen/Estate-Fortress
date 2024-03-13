@@ -3,7 +3,7 @@ import './companies.css';
 import Ministry from '/ministry.png';
 import YIBS from '/yibs.png';
 import Orange from '/orange.png';
-import MTN from './mtn.png'
+import MTN from '/mtn.png'
 
 const Companies = () => {
   return (
