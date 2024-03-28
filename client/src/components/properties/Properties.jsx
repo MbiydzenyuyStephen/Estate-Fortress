@@ -1,10 +1,11 @@
 import React from "react";
-import data from "../../utils/slider.json";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
-// Import Swiper styles
 import "swiper/css";
 import "./properties.css";
 import { sliderSettings } from "../../utils/common";
+import PropertyCard from "../propertyCard/PropertyCard";
+import useProperties from "../../hooks/UseProperties";
+import { PuffLoader } from "react-spinners";
 
 const Properties = () => {
   const SlideNextButton = () => {
@@ -21,6 +22,28 @@ const Properties = () => {
     );
   };
 
+  const {data, isError, isLoading} = useProperties();
+
+  if(isError){
+    return(
+        <div className="wrapper">
+            <span>Error while fetching data</span>
+        </div>
+    )
+}
+
+if(isLoading){
+    <div className="wrapper flexCenter" style={{height: "60vh"}}>
+        <PuffLoader 
+        height="80"
+        width="80"
+        radius={1}
+        color="#4066ff"
+        aria-label="puff-loading"
+        />
+    </div>
+} 
+
   return (
     <div id="residencies" className="r-wrapper">
       <div className="paddings innerWidth r-container">
@@ -36,19 +59,9 @@ const Properties = () => {
           {/* So for each object in the data array, 
         it will render a slide with the image, price, 
       name and details from that object. */}
-          {data.map((card, i) => (
+          {data && data.slice(0, 8).map((card, i) => (
             <SwiperSlide key={i}>
-              <div className="flexColStart r-card">
-                <img src={card.image} alt="home" />
-                <span className="secondaryText r-price">
-                  <span>{card.price}</span>
-                  <span style={{ color: "orange" }}>MFCFA</span>
-                </span>
-
-                <span className="primaryText">{card.name}</span>
-
-                <span className="secondaryText">{card.detail}</span>
-              </div>
+              <PropertyCard card={card} />
             </SwiperSlide>
           ))}
         </Swiper>

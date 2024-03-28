@@ -5,10 +5,11 @@ import { getMenuStyles } from "../../utils/common";
 import useHeaderColor from "../../hooks/useHeaderColor";
 import OutsideClickHandler from "react-outside-click-handler";
 import Logo from "/logo.png";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   {
-    /*    
+    /*     
   Use state to track whether the menu is open or closed
       */
   }
@@ -31,7 +32,9 @@ const Header = () => {
         {/*
        Logo image
       */}
+      <Link to="/">
         <img src={Logo} alt="logo" width={100} />
+      </Link>
         {/*
         Menu with click handler to close when clicked outside
       */}
@@ -41,10 +44,7 @@ const Header = () => {
           }}
         >
           <div className="flexCenter h-menu" style={getMenuStyles(menuOpened)}>
-            <a href="#residencies">Properties</a>
-            <a href="#value">Our Value</a>
-            <a href="#contact-us">Contact Us</a>
-            <a href="#get-started">Get Started</a>
+            <NavLink to="/properties">Properties</NavLink>
             <button className="button">
               <a href="#login">Log In</a>
             </button>

@@ -16,7 +16,7 @@ model User {
     favResidenciesID String[]    @db.ObjectId
     ownedResidencies Residency[] @relation("Owner")
 }
- 
+
 model Residency {
     id          String   @id @default(auto()) @map("_id") @db.ObjectId
     title       String
