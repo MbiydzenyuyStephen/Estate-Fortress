@@ -1,9 +1,9 @@
 import React from "react";
 import "./hero.css";
 import HeroImage from "/hero-image.png";
-import { HiLocationMarker } from "react-icons/hi";
 import { motion } from "framer-motion";
 import CountUp from "react-countup/build";
+import SearchBar from "../searchBar/SearchBar";
 
 const Hero = () => {
   return (
@@ -33,11 +33,7 @@ const Hero = () => {
             <span>Forget all difficulties in finding a residence for you</span>
           </div>
 
-          <div className=" flexCenter search-bar">
-            <HiLocationMarker color="var(--blue)" size={25} />
-            <input type="text" placeholder="Enter your location" />
-            <button className="button">Search</button>
-          </div>
+         <SearchBar />
 
           <div className="flexCenter stats">
             <div className="flexColCenter stat">

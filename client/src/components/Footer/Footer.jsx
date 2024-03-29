@@ -1,12 +1,13 @@
 import React from "react";
 import "./Footer.css";
+import Logo from "/logo.png";
 const Footer = () => {
   return (
     <div className="f-wrapper">
       <div className="paddings innerWidth flexCenter f-container">
         {/* left side */}
         <div className="flexColStart f-left">
-          <img src="./logo2.png" alt="" width={120} />
+            <img src={Logo} alt="Logo" width={120} />
           <span className="secondaryText">
           Our mission is to offer everyone <br />
           the best place to live in.
