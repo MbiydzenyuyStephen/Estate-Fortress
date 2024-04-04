@@ -45,6 +45,7 @@ if(isLoading){
 } 
 
   return (
+    
     <div id="residencies" className="r-wrapper">
       <div className="paddings innerWidth r-container">
         <div className="flexColStart r-head">
