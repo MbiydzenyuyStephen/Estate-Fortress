@@ -6,26 +6,18 @@ import useHeaderColor from "../../hooks/useHeaderColor";
 import OutsideClickHandler from "react-outside-click-handler";
 import Logo from "/logo.png";
 import { Link, NavLink } from "react-router-dom";
+import { useAuth0 } from "@auth0/auth0-react";
 
 const Header = () => {
-  {
-    /*     
-  Use state to track whether the menu is open or closed
-      */
-  }
+
+  const {loginWithRedirect} = useAuth0();
+  
+  {/*Use state to track whether the menu is open or closed*/}
   const [menuOpened, setMenuOpened] = useState(false);
 
-  {
-    /*
-      Custom hook to get the header background color
-      */
-  }
+  {/*Custom hook to get the header background color*/}
   const headerColor = useHeaderColor();
-  {
-    /*
-        Return the JSX for the header
-      */
-  }
+  
   return (
     <section className="h-wrapper" style={{ background: headerColor }}>
       <div className="flexCenter innerWidth paddings h-container">
@@ -45,8 +37,8 @@ const Header = () => {
         >
           <div className="flexCenter h-menu" style={getMenuStyles(menuOpened)}>
             <NavLink to="/properties">Properties</NavLink>
-            <button className="button">
-              <a href="#login">Log In</a>
+            <button className="button" onClick={loginWithRedirect}>
+              Log In
             </button>
           </div>
         </OutsideClickHandler>
